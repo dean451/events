@@ -1,0 +1,28 @@
+<article class="">
+
+<h3>What</h3>
+<p>
+  <%= @event.name %>
+</p>
+
+<h3>Starts At</h3>
+<p>
+  <% if @event.starts_at == nil %>
+    <%= "TBD" %>
+  <% else %>
+    <%= @event.starts_at %>
+  <% end %>
+</p>
+
+<h3>Where</h3>
+<p>
+  <%= @event.location %>
+</p>
+<h3>Price</h3>
+<p>
+  <%= format_price(@event) %>
+</p>
+
+</article>
+
+<%= link_to "All Events", events_path %>
