@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root to: "events#:id"
+  devise_for :users 
+  root to: 'events#index'
   get "events" => "events#index"
   get "events/:id" =>"events#show"
 end
