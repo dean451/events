@@ -5,7 +5,9 @@
  <li>
    <strong><%= link_to(event.name, "events/#{event.id}") %></strong>
         in <%= event.location %>.
+        <br>
         Price:  <%= format_price(event) %>
+        <br>
         When: <%= event.starts_at.to_s() %>
  </li>
  <p>
