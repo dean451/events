@@ -5,7 +5,9 @@
 <ul>
  <%  @events.each do |event| %>
  <li>
+   <%= image_for(event) %>
    <strong><%= link_to(event.name, "events/#{event.id}") %></strong>
+   <h3><%= pluralize(event.capacity, 'spot') %></h3>
         in <%= event.location %>.
         <br>
         Price:  <%= format_price(event) %>

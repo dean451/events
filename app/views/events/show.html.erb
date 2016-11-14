@@ -1,5 +1,7 @@
 <article class="">
 
+
+<%= image_for(@event), small %>
 <h3>What</h3>
 <p>
   <%= @event.name %>
@@ -21,6 +23,10 @@
 <h3>Price</h3>
 <p>
   <%= format_price(@event) %>
+</p>
+<h3>Capacity</h3>
+<p>
+  <%= pluralize(@event.capacity, 'spot')%>
 </p>
 
 </article>
