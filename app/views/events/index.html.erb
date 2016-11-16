@@ -5,7 +5,7 @@
 <ul>
  <%  @events.each do |event| %>
  <li>
-   <%= image_for(event) %>
+
    <strong><%= link_to(event.name, "events/#{event.id}") %></strong>
    <h3><%= pluralize(event.capacity, 'spot') %></h3>
         in <%= event.location %>.
@@ -14,6 +14,7 @@
         <br>
         When: <%= event.starts_at.to_s() %>
  </li>
+ <%= image_for(event) %>
  <p>
    Description: <%= truncate(event.description, length: 35, separator: ' ')%>
  </p>
