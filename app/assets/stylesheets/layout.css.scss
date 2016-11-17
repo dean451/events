@@ -1,12 +1,15 @@
+$primary-color: #237CBE;
+
+
 header#page-header {
   color: #F0F0F0;
-  background: #237CBE;
+  background: $primary-color;
   padding: 5px;
 }
 
 footer#page-footer {
   background: #F0F0F0;
-  color: #237CBE;
+  color: $primary-color;
   padding: 5px;
 }
 
