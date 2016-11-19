@@ -12,3 +12,14 @@ article.event {
     border: 3px solid $secondary-color;
   }
 }
+
+.flash {
+  color: $primary-color;
+
+  &.notice {
+    background-color: $flash-notice-color;
+  }
+  &.flash {
+    background-color: $flash-notice-color;
+  }
+}
