@@ -13,6 +13,7 @@ class Event < ApplicationRecord
     message: "must reference a gif, jpg, or png image"
   }
 
+  has_many :registrations, dependent: :destroy
 
 
   def free?
