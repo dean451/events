@@ -25,11 +25,12 @@
   <%= format_price(@event) %>
 </p>
 <p>
-  <%= link_to "Register!", new_event_registration_path(@event) %> 
+  <%= link_to "Register!", new_event_registration_path(@event) %>
 </p>
 <h3>Capacity</h3>
+<%= register_link(@event) %>
 <p>
-  <%= pluralize(@event.capacity, 'spot')%>
+  (<%= pluralize(@event.spots_left, 'spot')%> available)
 </p>
 
 
